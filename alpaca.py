@@ -16,17 +16,15 @@ class Alpaca:
         pass
 
     def buy(self):
-        answer = self.api.submit_order(symbol = self.symbol,
-                                        side = 'buy',
-                                        qty = self.quantity,
-                                        type = 'market',
-                                        time_in_force = 'day')
-        return answer
+        return self.api.submit_order(symbol = self.symbol,
+                                     side = 'buy',
+                                     qty = self.quantity,
+                                     type = 'market',
+                                     time_in_force = 'day')
 
     def sell(self):
-        answer = self.api.submit_order(symbol = self.symbol,
-                                       side = 'sell',
-                                       qty = self.quantity,
-                                       type = 'market',
-                                       time_in_force = 'day')
-        return answer
+        return self.api.submit_order(symbol = self.symbol,
+                                     side = 'sell',
+                                     qty = self.quantity,
+                                     type = 'market',
+                                     time_in_force = 'day')
