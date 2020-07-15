@@ -1,4 +1,4 @@
-# Alpaca implementation for the brokers module
+# Alpaca implementation for the CyberHead's brokers module
 
 Also you can use it as an even easier way to use the Alpaca Api:
 
